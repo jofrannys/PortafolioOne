@@ -1,0 +1,81 @@
+/*media sobre mi*/
+@media  (max-width: 460px) {
+  body{
+    overflow: hidden;
+    background: rgb(111, 111, 234) ;
+  }
+  .header {
+        position: fixed;
+        height: 100px;
+        padding: 20px 10%;
+        z-index: 1000;
+    }
+    .logo{
+        color: blue;
+        margin-left: -140px;
+    }
+    .header label {
+        display: initial;
+    }
+    .header .navItems{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.20);
+        display: none;
+    }
+    .header .navItems li {
+        background-color: rgb(164, 152, 244);
+        width: 100%;
+    }
+    .header .navItems li a {
+        font-size: 30px;
+        font-weight: bold;
+        color: blue;
+        padding: 8px 30px 8px 10px;
+    }
+
+    #toggle:checked ~ .navItems {
+        display: block;
+    }
+    .container{
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .wrapper{
+        
+        flex-direction: column;
+        width: 120%;
+        padding: 0;
+        margin-left: -40px;
+        background:none;
+    }
+    .sobre {
+        margin-top: 0px;
+        padding-top: 100px;
+        width: 77%;
+        height: 200px;
+        
+        
+        
+    }
+    .about__paragraph{
+        font-size: 23px;
+        text-align: justify;
+        color: #fff;
+    }
+    .cols{
+        margin-top: -190px;
+        width: 77%;
+        height: 600px;
+        padding: 0;
+        padding-left: 20px;
+        background:none;
+        box-shadow: none;
+        
+    }
+    .cols1{
+        display: none;
+    }
+}
